@@ -1,9 +1,4 @@
 :root {
-/*  --background-color-body : #b7b5b5;
-  --background-card       : #42515a;
-  --background-footer-card: #c74385;
-  --color-letter          : #ffffff;
-  --color-name            : #c5d4cf;*/
   --color-primary : #522377;
   --color-secondary   : #b9315a;
 }
@@ -13,7 +8,6 @@
 }
 
 body {
-  /*background-color: var(--color-secondary);*/
   background-color: white;
 }
 
