@@ -11,6 +11,10 @@
   --margin-center: 0 auto;
 }
 
+html {
+    zoom: 75%;
+    }
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--global-font-size);
