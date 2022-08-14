@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Clon de Netflix</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/clon-netflix.css" />
+    <link rel="icon" type="image/png" href="/assets/img/nf-favicon.png" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <img src="/assets/img/netflix_logo.png" class="header__logo" />
+      <nav>
+        <a href="#" class="boton boton__login" href="">Iniciar Sesión</a>
+      </nav>
+      <section class="header__form">
+        <div class="header__contenido">
+          <h1 class="titulo">Programas y películas sin límite y mucho más.</h1>
+          <h2 class="subtitulo">
+            Disfruta donde quieras. Cancela en cualquier momento.
+          </h2>
+        </div>
+        <input
+          type="email"
+          name="email"
+          class="formulario__email"
+          placeholder="Email"
+        />
+        <a href="#" class="boton boton--grande">Probar ahora</a>
+        <h3 class="titulo titulo--sm">
+          ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
+          reiniciar tu membresía de Netflix.
+        </h3>
+      </section>
+    </header>
+    <div class="fondo">
+      <img
+        src="/assets/img/netflix_fondo.jpg"
+        alt=""
+        srcset=""
+        class="fondo__imagen"
+      />
+      <div class="fondo fondo--degradado"></div>
+    </div>
+    <!--SECCIÓN 1-->
+    <article>
+      <section class="section__contenido">
+        <div class="columna">
+          <h1 class="titulo">Disfruta en tu TV.</h1>
+          <h2 class="subtitulo">
+            Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV,
+            reproductores de Blu-ray y más.
+          </h2>
+        </div>
+
+        <div class="columna">
+          <div class="section__animation">
+            <img
+              src="/assets/img/marco_tv.png"
+              alt=""
+              class="section__imagen"
+            />
+            <div class="section__video">
+              <video autoplay loop muted class="video">
+                <source src="/assets/video/video-tv.m4v" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article>
+      <div class="section__contenido">
+        <div class="columna">
+          <div class="section__telefono">
+            <img
+              src="/assets/img/netflix_download.jpg"
+              alt=""
+              srcset=""
+              class="section__imagen"
+            />
+            <div class="section__descarga">
+              <img
+                src="/assets/img/download_animation_image.png"
+                alt=""
+                srcset=""
+                class="section__imagen--small"
+              />
+              <div class="section__informacion">
+                <p class="texto--minimo">Stranger Things</p>
+                <p class="texto--azul">Descargando...</p>
+              </div>
+              <img
+                src="/assets/img/download-icon.gif"
+                alt=""
+                srcset=""
+                class="section__imagen--small"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+            <hi class="titulo">Descarga contenidos para ver donde vayas.</hi>
+            <h2 class="subtitulo">Disfruta offline tus películas y programas favoritos.</h2>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
