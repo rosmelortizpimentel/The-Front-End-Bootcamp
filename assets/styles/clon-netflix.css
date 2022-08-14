@@ -12,8 +12,8 @@
 }
 
 html {
-    zoom: 75%;
-    }
+  zoom: 75%;
+}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -36,6 +36,7 @@ header {
   z-index: 2;
   min-height: 600px;
 }
+
 /* NAVBAR */
 .header__logo {
   width: 133px;
@@ -100,6 +101,10 @@ header {
   font-weight: normal;
   margin-top: 10px;
 }
+
+article .titulo--sm {
+    display: inline-block;
+  }
 
 .fondo {
   position: absolute;
@@ -199,24 +204,96 @@ article:nth-child(3) {
   top: -10px;
 }
 
-
-.texto--minimo{
-    font-size: var(--global-font-size);
-    color: var(--white-color);
-    font-weight: 600;
-    margin: 0;
+.texto--minimo {
+  font-size: var(--global-font-size);
+  color: var(--white-color);
+  font-weight: 600;
+  margin: 0;
 }
 
-.texto--azul{
-    color: #0071eb;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
+.texto--azul {
+  color: #0071eb;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.section__telefono {
+  position: relative;
+  top: 90px;
+}
+
+/*ARTICLE 3*/
+.section__dispositivos {
+  top: 31px;
+  width: 61%;
+  left: 86px;
+  z-index: -1;
+}
+
+/*ARTICLE 4*/
+
+.faq {
+  width: 80%;
+  margin: var(--margin-center);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.faq__lista {
+  margin: 16px auto;
+  max-width: 815px;
+}
+
+.faq__objeto {
+  list-style: none;
+  margin: 0 0 8px 0;
+}
+
+.boton--faq {
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  background-color: var(--dark-grey-color);
+}
+
+.svg-pequeño {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  height: 1em;
+  fill: white;
+  transform: translateY(-50%);
+  transition: 300ms;
+}
+
+.svg-pequeño.svg-pequeño--panel-cerrado {
+  transform: translateY(-50%) rotate(-45deg);
+  transition: 300ms;
+}
+
+.faq__respuesta {
+  text-align: center;
+  background: var(--dark-grey-color);
+}
+
+.faq__respuesta.faq__respuesta--cerrada {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
 }
 
 
-.section__telefono{
-    position: relative;
-    top: 90px;
+.faq__respuesta.faq__respuesta--abierta {
+    max-height: 1200px;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  }
 
-}
+  .cta{
+    margin: var(--margin-center);
+    width: 90%;
+    padding: 30px;
+  }
+
