@@ -6,21 +6,98 @@
   --color-background-button: #f8f9fa;
 }
 
-header {
-    position: absolute;
-    height: 100px;
-    top: 0;
-    right: 0;
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+div{
+    border: 0px solid red;
+}
 footer{
     position: absolute;
     bottom: 0;
 }
-
 .center {
-  text-align: center;
+    text-align: center;
+  }
+
+.header{
+    position:relative;
+    text-align: right;
+    height: 60px;
+    padding-right: 18px;
+    padding-top: 6px;
 }
+
+.menu{
+    position:relative;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.menu__option{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.menu__option a{
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    height: 40px;
+}
+
+.menu__option a:hover {
+    text-decoration: underline;
+}
+
+
+.session{
+    position:relative;
+    display: inline-block;
+    text-align: right;
+}
+.session img{
+    border-radius: 50%;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.session__circle{
+    position: absolute;
+}
+
+.products{
+    position:relative;
+    display: inline-block;
+    height: 40PX;
+    width: 40px;
+}
+
+
+
+.products__icon svg{
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box ;
+    padding-top: 12px;
+    padding-right: -50px;
+}
+
+.products__icon{
+    position: absolute;
+    height: 40PX;
+    width: 40px;
+
+}
+
+
+
 
 .row__search {
   height: 44px;
@@ -29,6 +106,7 @@ footer{
   margin: 0 auto;
   width: auto;
   max-width: 584px;
+  margin-top: 21px;
 }
 
 .row__search input {
@@ -42,6 +120,13 @@ footer{
   font-size: 16px;
 }
 
+
+.row__languages{
+    color: #4d5156;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: small;
+}
 input[type="submit"] {
   background-color: var(--color-background-button);
   border: 1px solid var(--color-background-button);
