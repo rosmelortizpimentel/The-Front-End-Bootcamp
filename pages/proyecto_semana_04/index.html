@@ -134,6 +134,29 @@
             </div>
         </div>
     </footer>
+
+
+  <!--START RETURN-->
+  <button class="btn-flotante" id="btnTheme" onclick="changeTheme()">Dark theme</button>
+  <!--END RETURN-->
+<script>
+
+function changeTheme(){
+ 
+    let color = document.getElementById("btnTheme");
+    console.log(color);
+   
+    if (color.innerHTML == "Dark theme") {
+        color.innerHTML="Light theme";
+        document.body.style.backgroundColor = "#202124";
+        
+    }else if (color.innerHTML == "Light theme") {
+        color.innerHTML="Dark theme";
+        document.body.style.backgroundColor = "#ffffff";
+    }
+}
+
+</script>
 </body>
 
 </html>
